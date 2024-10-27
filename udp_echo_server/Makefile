@@ -1,6 +1,6 @@
 Udp_server:main.cpp
-	g++ -o $@ $^ -std=c++11
+	g++ -o $@ $^ -std=c++14
 
 .PHONY:clean
 clean:
-	rm -f Udp_server
+	rm -fr Udp_server log

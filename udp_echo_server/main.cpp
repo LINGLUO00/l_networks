@@ -15,6 +15,8 @@ int main(int argc,char*argv[])
         Usage(argv[0]);
         return Usage_Err;
     }
+    std::string ip=argv[1];
+    uint16_t port=std::stoi(argv[2]);
     std::unique_ptr<UdpServer> usvr = std::make_unique<UdpServer>("0.0.0.0");
     usvr->init();
     usvr->Start();
